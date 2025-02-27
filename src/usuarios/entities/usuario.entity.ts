@@ -2,6 +2,9 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'users' })
 export class Usuario {
+  password(password: string, password1: any) {
+    throw new Error('Method not implemented.');
+  }
 	@PrimaryGeneratedColumn()
 	id: number;
 
